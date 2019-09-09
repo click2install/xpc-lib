@@ -4,11 +4,19 @@ Java library for offline interaction with the XPC blockchain.
 
 ##### Create an address
 ```
-var address = AddressUtils.createTestnet();
-var address = AddressUtils.createTestnetLegacy();
+var pair = AddressUtils.createTestnet();
+var pair = AddressUtils.createTestnetLegacy();
 
-var address = AddressUtils.createMainnet();
-var address = AddressUtils.createMainnetLegacy();
+var pair = AddressUtils.createMainnet();
+var pair = AddressUtils.createMainnetLegacy();
+
+var address = pair.address.toString();
+var privkey = pair.privateKey.privateKeyEncoded;
+```
+
+##### Verify an address
+```
+var valid = Address.verify(address);
 ```
 
 ##### Create a transaction
