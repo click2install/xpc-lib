@@ -1,7 +1,6 @@
 ### XPC-LIB
-*Based on code from https://github.com/ValleZ/Paper-Wallet with all the Android code stripped out*
-
 Java library for offline interaction with the XPC blockchain.
+*Based on code from https://github.com/ValleZ/Paper-Wallet with all the Android code stripped out*
 
 ##### Create an address
 ```
